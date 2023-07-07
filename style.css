@@ -1,1 +1,38 @@
+#container{
+  background-color: pink;
+  height: 400px;
+  width: 400px;
+}
 
+#calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: solid black;
+}
+
+#numbers{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  border: solid black;
+}
+
+.digit {
+  border: solid black;
+  flex: 1 1 30%;
+}
+
+#button {
+  background-color: purple;
+  color: white;
+}
+
+#display {
+  align-self: center;
+  border: solid black;
+}
+
+#operators {
+  align-self: center;
+}
