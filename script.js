@@ -34,9 +34,13 @@ function operate(num1, num2, operator) {
 const buttons = document.querySelectorAll(".digit")
 buttons.forEach(function(i){
   i.addEventListener('click', function(){
-  	document.querySelector('#display-items').innerHTML = i.innerHTML;
+  	let number = document.querySelector('#display-items');
+    let addNum = document.createElement('div');
+    number.innerHTML = "";
+    number.appendChild(addNum);
+    addNum.innerHTML = i.innerHTML;
   })
-}) 
+})  
 
 const clear = document.getElementById('clear-button');
 const display = document.getElementById("display-items");
