@@ -30,3 +30,10 @@ function operate(num1, num2, operator) {
   } else
     return;
 }
+
+const clear = document.getElementById('clear-button');
+const display = document.getElementById("display-items");
+
+clear.addEventListener('click', function(){
+	display.innerHTML = " ";
+})
