@@ -1,14 +1,16 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: pink;
 }
 
 #container{
   display: flex;
   justify-content: center;
-  background-color: pink;
+  background-color: rgb(150, 220, 300);
+  border-radius: 15px;
   height: 300px;
-  width: 300px; 
+  width: 300px;
 }
 
 #calculator {
@@ -16,37 +18,57 @@ body {
   flex-direction: column;
   gap: 5px;
   border: solid black;
+  border-radius: 15px;
 }
 
 #numbers{
   display: flex;
   flex-wrap: wrap;
   flex: 1;
+  gap: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
 }
 
 .digit {
   border: solid black;
   flex: 1 1 30%;
   cursor: pointer;
+  border-radius: 5px;
+  font-size: 25px;
 }
 
-#button {
+#clear-button {
   background-color: purple;
   color: white;
   cursor: pointer;
+  font-size: 25px;
+  border-radius: 5px;
 }
 
 #display {
   border: solid black;
-  width: 250px;
-  height: 35px;
+  width: 275px;
+  height: 45px;
   margin: 5px;
+  font-size: 25px;
+  border-radius: 5px;
+  background-color: white;
+}
+
+#display-items{
+  flex: 1 1 auto;
+  margin-top: 8px;
+  margin-left: 175px;
 }
 
 #operators {
   align-self: center;
+  margin-bottom: 5px;
 }
 
 #operator-button{
   cursor: pointer;
+  border-radius: 5px;
+  font-size: 25px;
 }
