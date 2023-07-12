@@ -35,10 +35,9 @@ const buttons = document.querySelectorAll(".digit")
 buttons.forEach(function(i){
   i.addEventListener('click', function(){
   	let number = document.querySelector('#display-items');
-    let addNum = document.createElement('div');
-    number.innerHTML = "";
-    number.appendChild(addNum);
-    addNum.innerHTML = i.innerHTML;
+    let number1 = i.innerHTML;
+    let number2 = number.innerHTML;
+    number.innerHTML = number2 + number1;
   })
 })  
 
