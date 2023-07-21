@@ -61,15 +61,21 @@ body {
 
 #display-items{
   flex: 1 1 0;
+  margin-right: 5px;
+  margin-top: 6px;
 }
 
 #operators {
+  display: flex;
+  gap: 5px;
   align-self: center;
   margin-bottom: 5px;
 }
 
-#operator-button{
+.operator-button{
   cursor: pointer;
   border-radius: 5px;
   font-size: 25px;
+  height: 30px;
+  width: 30px;
 }
