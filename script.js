@@ -1,12 +1,8 @@
 function add(a, b) {
-  let adds = a + b;
-  console.log(adds);
   return a + b;
 }
 
 function divide(a, b) {
-  let divides = a / b;
-  console.log (divides);
   return a / b;
 }
 
@@ -63,10 +59,12 @@ const clear = document.getElementById('clear-button');
 const display = document.getElementById("display-items");
 
 clear.addEventListener('click', function(){
-	display.innerHTML = " ";
+	display.innerHTML = "";
   num1 = 0;
   num2 = 0;
   operator = "";
+  console.log(num1);
+  console.log(num2);
 })
 
 function getLastNumber(string){
@@ -79,10 +77,12 @@ const equals = document.getElementById("equals");
 equals.addEventListener('click', function(){
   let number = document.querySelector("#display-items");
   num2 = getLastNumber(number.innerHTML);
+  console.log(num2);
   num1 = parseInt(num1);
   num2 = parseInt(num2);
   console.log(num2);
   let equals_operate = operate(num1, num2, operator);
   console.log(equals_operate);
+  let display_new = document.getElementById("display-items");
+  display_new.innerHTML = equals_operate;
 })
-
